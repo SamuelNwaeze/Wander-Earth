@@ -1,0 +1,54 @@
+* {
+  --pryColor: #f2e5ff;
+  --secColor: #5c179f;
+  --otherOption: #545454;
+  --text: #fff;
+}
+
+body {
+  overflow: hidden;
+}
+
+.sentParagraph {
+  text-align: center;
+  width: 50%;
+  font-size: 1.25rem;
+  color: var(--otherOption);
+}
+
+.sentText {
+  color: var(--secColor);
+  font-family: "Habibi, RoadRage";
+  font-size: 3.38rem;
+  line-height: normal;
+  margin: 20px;
+}
+
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 18px;
+}
+
+.codeField {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  margin: 9px;
+
+  font-size: 1.25rem;
+  text-align: center;
+
+  border-radius: 8px;
+  border: none;
+  background-color: var(--text);
+}
+
+.codeField:focus {
+  outline-width: 0.3px;
+  outline-color: var(--secColor);
+  box-shadow: 4px 4px 10px 0px rgba(92, 23, 159, 0.5);
+}
