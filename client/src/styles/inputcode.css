@@ -1,0 +1,48 @@
+.sent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sentText{
+  color: var(--secColor);
+  font-family: Habibi;
+  font-size: 4.5rem;
+}
+
+.sentParagraph{
+  color: #000;
+  width: 60%;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.25rem;
+}
+
+.resendCodeText {
+  color: var(--secColor);
+  font-weight: 720;
+}
+
+.codeInputs{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 12px;
+}
+
+.codeField{
+  width: 45px;
+  height: 50px;
+  border: var(--otherOption);
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 630;
+}
+
+.codeField:focus{
+  outline-color: var(--secColor);
+  outline-width: 2px;
+  box-shadow: 4px 4px 10px 0px rgba(92, 23, 159, 0.50);
+}

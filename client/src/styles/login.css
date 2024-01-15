@@ -1,0 +1,28 @@
+.signupText {
+  color: var(--secColor);
+  font-weight: 720;
+}
+
+.resendText {
+  color: var(--secColor);
+  font-weight: 720;
+}
+
+.forgotPassword{
+  color: var(--secColor);
+  font-size: 0.9rem;
+  font-weight: 630;
+}
+
+.loginInputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emailReset{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+

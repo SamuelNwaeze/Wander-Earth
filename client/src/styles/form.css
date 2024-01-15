@@ -1,0 +1,109 @@
+* {--pryColor: #f2e5ff;
+  --secColor: #5c179f;
+  --otherOption: #545454;
+  --text: #fff;
+  --shadowOpacity: 0.5}
+
+.heroContainer{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+      0deg,
+      rgba(104, 4, 151, 0.6) 0%,
+      rgba(104, 4, 151, 0.6) 100%
+    ),
+    url(../assets/Background.jpg);
+  mix-blend-mode: difference;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroImage{
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroIcon{
+  width: 500px;
+}
+
+form{
+  width: 35vw;
+  height: 100vh;
+  gap: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pryColor);
+}
+
+.formIcon{
+  width: 250px;
+}
+
+.signupInputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttonandotherOption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  width: 180px;
+  height: 36px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.25rem;
+
+  background-color: var(--secColor);
+  color: var(--pryColor);
+}
+
+.inputTitle {
+  color: var(--secColor);
+
+  font-family: Inter;
+  font-size: 1.25rem;
+  line-height: normal;
+}
+
+.formField {
+  width: 270px;
+  height: 45px;
+  padding: 10px;
+
+  border-radius: 8px;
+  border: none;
+  background-color: var(--text);
+}
+
+.error{
+  font-size: 0.7rem;
+  color: red;
+}
+
+.otherOption {
+  color: var(--otherOption);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.loginText {
+  color: var(--secColor);
+  font-weight: 720;
+}

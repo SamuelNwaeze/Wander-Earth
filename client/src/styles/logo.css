@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow: hidden;
+}
+
+.Head {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-self: center;
+
+  background: linear-gradient(
+      0deg,
+      rgba(104, 4, 151, 0.6) 0%,
+      rgba(104, 4, 151, 0.6) 100%
+    ),
+    url(../assets/Background.jpg);
+  mix-blend-mode: difference;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: relative;
+  width: 76px;
+
+  animation: zoom-in-out 2s infinite;
+}
+
+@keyframes zoom-in-out {
+  0%,
+  100% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
