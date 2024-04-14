@@ -2,7 +2,7 @@
 import react from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import axios from "axios";
 import FormIcon from "../assets/App Icon and Text 1formIcon.png";
 
 import HeroIcon from "../assets/Wander Earth Icon 2.png";
@@ -35,6 +35,7 @@ function SignupForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const validateError = {};
     const emailFormat = /^\S+@\S+\.\S+$/;
 
@@ -63,8 +64,17 @@ function SignupForm() {
     setErrors(validateError);
 
     if (Object.keys(validateError).length === 0) {
-      alert("Form submitted");
+      console.log("Form submitted");
     }
+
+    axios
+      .post("http://localhost:5000/", { formData })
+      .then((results) => {
+        console.log(results);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   const navigate = useNavigate();
